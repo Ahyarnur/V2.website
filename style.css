@@ -229,7 +229,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-warp: wrap;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 .service-container .services-box{
@@ -288,7 +288,7 @@ span{
 }
 .project-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -502,7 +502,7 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
-    .services h2{
+    .service h2{
         margin-bottom: 3rem;
     }
     .project h2{
