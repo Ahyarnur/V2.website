@@ -24,3 +24,8 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+var typed = new Typed('#typing', {
+    strings: ['Web Design', 'Gamer' ,'UI Desain' ,'Dreamer'],
+    typeSpeed: 45,
+});

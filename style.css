@@ -77,7 +77,7 @@ section{
     gap: 8rem;
 }
 .home-content h3{
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 span{
@@ -226,12 +226,17 @@ span{
     margin-bottom: 8rem;
 }
 .service-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 3rem;
 }
+
+@media (max-width: 874px) {
+    .service-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 .service-container .services-box{
     flex: 1 1 40rem;
     display: flex;
@@ -253,15 +258,15 @@ span{
     color: black;
 }
 .services-box i{
-    font-size: 7rem;
+    font-size: 9rem;
     color: black;
     margin-bottom: 1rem;
 }
 .services-box h3{
-    font-size: 2.6rem;
+    font-size: 3rem;
 }
 .services-box p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 1rem 0 3rem;
 }
 .services-box .btn{
@@ -288,10 +293,17 @@ span{
 }
 .project-container{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
 }
+
+@media (max-width: 874px) {
+    .project-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 .project-container .project-box{
     position: relative;
     border-radius: 2rem;
@@ -389,27 +401,8 @@ span{
     bottom: 0;
     width: 100%;
     padding: 25px 0;
-    background-color: var(--main-color);
+    background-color: var(--second-bg-color);
 }
-.footer .social{
-    text-align: center;
-    padding-bottom: 2px;
-    color: white;
-}
-.footer .social a{
-    font-size: 25px;
-    color: white;
-    border: 2px solid white;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 10px;
-    transition: 0.3s ease;
-}
-
 .footer ul{
     margin-top: 0;
     padding: 0;
@@ -418,20 +411,13 @@ span{
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a{
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease;
-}
-.footer ul li a:hover{
-    border-bottom: 3px solid white;
-}
+
 .footer ul li{
     display: inline-block;
     padding: 0 10px;
 }
 .footer .copyright{
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     font-size: 13px;
     color: white;
