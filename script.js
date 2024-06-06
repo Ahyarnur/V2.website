@@ -27,5 +27,6 @@ menuIcon.onclick = () => {
 
 var typed = new Typed('#typing', {
     strings: ['Web Design', 'Gamer' ,'UI Desain' ,'Dreamer'],
-    typeSpeed: 45,
+    typeSpeed: 47,
+    loop: true,
 });
